@@ -9,6 +9,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  list-style: none;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -16,27 +18,15 @@ body {
 }
 
 @layer utilities {
+  p {
+    @apply text-gray-300;
+  }
   .section-title {
-    @apply text-secondaryColor text-bold	text-5xl leading-snug;
-  }
-  .btn_white {
-    @apply border-white bg-white px-8 py-3 text-green-50;
-  }
-  .btn_white_text {
-    @apply text-gray-90 border-white bg-white px-8 py-3;
-  }
-  .btn_green {
-    @apply border-green-50 bg-green-50 px-8 py-5 text-white;
-  }
-  .btn_dark_green {
-    @apply bg-green-90 px-8 py-4 text-white transition-all hover:bg-black;
-  }
-  .btn_dark_green_outline {
-    @apply border-gray-20 bg-green-90 px-8 py-5 text-white;
+    @apply text-5xl font-bold	leading-snug text-secondaryColor;
   }
 
   .max-container {
-    @apply mx-auto max-w-[1440px];
+    @apply mx-auto max-w-[1280px];
   }
 
   .padding-container {
@@ -44,88 +34,142 @@ body {
   }
 
   .flexCenter {
-    @apply flex items-center justify-center;
+    @apply flex flex-row items-center justify-center;
   }
 
   .flexBetween {
-    @apply flex items-center justify-between;
+    @apply flex flex-row items-center justify-between;
   }
 
   .flexStart {
-    @apply flex items-center justify-start;
+    @apply flex flex-row items-center justify-start;
   }
 
   .flexEnd {
-    @apply flex items-center justify-end;
+    @apply flex flex-row items-center justify-end;
   }
 
-  /* FONTS */
-  .regular-64 {
-    @apply text-[64px] font-[400] leading-[120%];
+  .flexColStart {
+    @apply flex flex-col items-start justify-center;
   }
 
-  .regular-40 {
-    @apply text-[40px] font-[400] leading-[120%];
+  .flexColCenter {
+    @apply flex flex-col items-center justify-center;
   }
 
-  .regular-32 {
-    @apply text-[32px] font-[400];
+  .flexColEnd {
+    @apply flex flex-col items-end justify-center;
   }
 
-  .regular-24 {
-    @apply text-[24px] font-[400];
+  .flexColBetween {
+    @apply flex flex-col items-center justify-between;
+  }
+  /* TYPOGRAPHY */
+  /* 64 */
+  .h1-bold {
+    @apply text-center text-[40px] font-bold leading-[48px] lg:text-start  lg:text-[56px] lg:leading-[60px]  xl:text-[64px] xl:leading-[74px];
   }
 
-  .regular-20 {
-    @apply text-[20px] font-[400];
+  /* 48 */
+  .h2-bold {
+    @apply text-center text-[32px]  font-bold leading-[40px] lg:text-start lg:text-[40px] lg:leading-[52px] xl:text-[48px] xl:leading-[56px];
   }
 
-  .regular-18 {
-    @apply text-[18px] font-[400];
+  .h2-medium {
+    @apply text-center text-[32px]  font-medium leading-[40px] lg:text-start lg:text-[40px] lg:leading-[52px] xl:text-[48px] xl:leading-[56px];
   }
 
-  .regular-16 {
-    @apply text-[16px] font-[400];
+  /* 36 */
+  .h3-bold {
+    @apply text-center text-[28px]  font-bold leading-[36px] md:text-[36px] md:leading-[44px] lg:text-start;
   }
 
-  .regular-14 {
-    @apply text-[14px] font-[400];
+  .h3-medium {
+    @apply text-center text-[28px]  font-medium leading-[36px] md:text-[36px] md:leading-[44px] lg:text-start;
   }
 
-  .medium-14 {
-    @apply text-[14px] font-[600];
+  /* 32 */
+  .h4-medium {
+    @apply text-center text-[32px]  font-medium leading-[40px] lg:text-start;
   }
 
-  .bold-88 {
-    @apply text-[88px] font-[700] leading-[120%];
+  /* 28 */
+  .h5-bold {
+    @apply text-center text-[28px]  font-bold leading-[36px] lg:text-start;
   }
 
-  .bold-64 {
-    @apply text-[64px] font-[700] leading-[120%];
+  /* 24 */
+  .p-bold-24 {
+    @apply text-center text-[24px]  font-bold leading-[36px] lg:text-start;
   }
 
-  .bold-52 {
-    @apply text-[52px] font-[700] leading-[120%];
+  .p-medium-24 {
+    @apply text-center text-[24px]  font-medium leading-[36px] lg:text-start;
   }
 
-  .bold-40 {
-    @apply text-[40px] font-[700] leading-[120%];
+  .p-regular-24 {
+    @apply text-center text-[24px]  font-normal leading-[36px] lg:text-start;
   }
 
-  .bold-32 {
-    @apply text-[32px] font-[700] leading-[120%];
+  /* 20 */
+  .p-bold-20 {
+    @apply text-center text-[20px]  font-bold leading-[30px] tracking-[2%] lg:text-start;
   }
 
-  .bold-20 {
-    @apply text-[20px] font-[700];
+  .p-semibold-20 {
+    @apply text-center text-[20px]  font-semibold leading-[30px] tracking-[2%] lg:text-start;
   }
 
-  .bold-18 {
-    @apply text-[18px] font-[700];
+  .p-medium-20 {
+    @apply text-center text-[20px]  font-medium leading-[30px] lg:text-start;
   }
 
-  .bold-16 {
-    @apply text-[16px] font-[700];
+  .p-regular-20 {
+    @apply text-center text-[20px]  font-normal leading-[30px] tracking-[2%] lg:text-start;
+  }
+
+  /* 18 */
+  .p-semibold-18 {
+    @apply text-center text-[18px]  font-semibold leading-[28px] tracking-[2%] lg:text-start;
+  }
+
+  .p-medium-18 {
+    @apply text-center text-[18px]  font-medium leading-[28px] lg:text-start;
+  }
+
+  .p-regular-18 {
+    @apply text-center text-[18px]  font-normal leading-[28px] tracking-[2%] lg:text-start;
+  }
+
+  /* 16 */
+  .p-bold-16 {
+    @apply text-center text-[16px]  font-bold leading-[24px]  lg:text-start;
+  }
+
+  .p-medium-16 {
+    @apply text-center text-[16px]  font-medium leading-[24px]  lg:text-start;
+  }
+
+  .p-regular-16 {
+    @apply text-center text-[16px]  font-normal leading-[24px]  lg:text-start;
+  }
+
+  /* 14 */
+  .p-semibold-14 {
+    @apply text-center text-[14px]  font-semibold leading-[20px] lg:text-start;
+  }
+
+  .p-medium-14 {
+    @apply text-center text-[14px]  font-medium leading-[20px] lg:text-start;
+  }
+
+  .p-regular-14 {
+    @apply text-center text-[14px]  font-normal leading-[20px] lg:text-start;
+  }
+
+  /* 12 */
+  .p-medium-12 {
+    @apply text-center text-[12px]  font-medium leading-[20px] lg:text-start;
   }
 }
 
@@ -151,10 +195,10 @@ body {
     --popover: 0 0% 100%;
     --popover-foreground: 222.2 84% 4.9%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    --primary: 0, 86%, 62%, 1;
+    --primary-foreground: 0, 89%, 88%, 1;
 
-    --secondary: 210 40% 96.1%;
+    --secondary: 227, 25%, 15%, 1;
     --secondary-foreground: 222.2 47.4% 11.2%;
 
     --muted: 210 40% 96.1%;

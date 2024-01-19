@@ -1,11 +1,12 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   darkMode: ["class"],
+  important: true,
   content: [
-    "./pages/**/*.{ts,tsx}",
-    "./components/**/*.{ts,tsx}",
-    "./app/**/*.{ts,tsx}",
-    "./src/**/*.{ts,tsx}",
+    "./pages/**/*.{js,ts,jsx,tsx,mdx}",
+    "./components/**/*.{js,ts,jsx,tsx,mdx}",
+    "./app/**/*.{js,ts,jsx,tsx,mdx}",
+    "./containers/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   prefix: "",
   theme: {
@@ -18,17 +19,20 @@ module.exports = {
     },
     extend: {
       colors: {
-        primaryColor: "#F24C4C",
-        secondaryColor: "#1D2130",
-        black: "#151411",
-        textColor: "#525560",
-        backgroundColor: "#F7F8FA",
+        black: "#1E1E1E",
         lightGray: "#EBF0F9",
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
+        gray: {
+          100: "#EBF0F9",
+          200: "#E5E5E5",
+          300: "#525560",
+          400: "#1E1E1E",
+          500: "red",
+        },
         primary: {
           DEFAULT: "hsl(var(--primary))",
           foreground: "hsl(var(--primary-foreground))",
@@ -66,6 +70,12 @@ module.exports = {
           500: "#1D2130",
           700: "#171A28",
         },
+      },
+      screens: {
+        sm: "640px",
+        md: "768px",
+        lg: "1024px",
+        xl: "1280px",
       },
       backgroundImage: {
         "bg-img-1": "url('/img-1.png')",

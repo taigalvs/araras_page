@@ -66,7 +66,7 @@ const Navbar = () => {
               return (
                 <li
                   key={item.key}
-                  className="hover:text-primary-500 text-gray-600"
+                  className="text-gray-600 hover:text-primary-500"
                 >
                   <a className="font-medium" href={item.href}>
                     {item.label}

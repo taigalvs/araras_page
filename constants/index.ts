@@ -7,6 +7,13 @@ export const NAV_LINKS = [
   { href: "/contato", key: "contact_us", label: "Contato" },
 ];
 
+export const SUPPORTERS_URL = [
+  "assets/images/logo-ipsum.svg",
+  "assets/images/logo-ipsum.svg",
+  "assets/images/logo-ipsum.svg",
+  "assets/images/logo-ipsum.svg",
+];
+
 // FOOTER SECTION
 export const FOOTER_LINKS = [
   {
