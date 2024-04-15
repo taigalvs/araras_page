@@ -1,11 +1,11 @@
-"use client";
+'use client'
 
-import { Button } from "@/components/ui/button";
-
-import { useRouter } from "next/navigation";
+import { Button } from '@/components/atoms'
+import { useRouter } from 'next/navigation'
 
 const NotFound = () => {
-  const router = useRouter();
+  const router = useRouter()
+
   return (
     <main>
       <section className="flex w-full justify-center">
@@ -16,11 +16,11 @@ const NotFound = () => {
           <h1 className="text-secondaryColor max-w-[50rem] text-2xl  font-bold md:text-6xl">
             4 0 4
           </h1>
-          <Button onClick={() => router.push("/")}>Ir para o início</Button>
+          <Button onClick={() => router.push('/')}>Ir para o início</Button>
         </div>
       </section>
     </main>
-  );
-};
+  )
+}
 
-export default NotFound;
+export default NotFound

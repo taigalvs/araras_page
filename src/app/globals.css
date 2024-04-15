@@ -1,5 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -13,16 +13,9 @@
   scroll-behavior: smooth;
 }
 
-body {
-  font-family: Roboto;
-}
-
 @layer utilities {
   p {
     @apply text-gray-300;
-  }
-  .section-title {
-    @apply text-5xl font-bold	leading-snug text-secondaryColor;
   }
 
   .max-container {
