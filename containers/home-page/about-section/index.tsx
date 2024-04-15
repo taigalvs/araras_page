@@ -14,7 +14,7 @@ const AboutSection: FC<AboutSectionProps> = ({}) => {
         <div className="flexColCenter lg:flexColStart flex-1 sm:text-center lg:text-left">
           <div className="flexColCenter lg:flexStart mb-6 flex-col-reverse gap-4 lg:flex-row">
             <hr className="w-[72px] border-b-2 border-secondary" />
-            <h3 className=" font-medium uppercase tracking-wide text-secondary">
+            <h3 className="font-bold uppercase tracking-wide text-secondary">
               Saiba mais sobre nós
             </h3>
           </div>
@@ -38,6 +38,7 @@ const AboutSection: FC<AboutSectionProps> = ({}) => {
         </div>
         <div className="flexCenter lg:flexEnd  flex-1 ">
           <Image
+            className="rounded-3xl"
             placeholder="blur"
             width={480}
             alt="kids playing"
