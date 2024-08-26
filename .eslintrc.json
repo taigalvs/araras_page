@@ -51,11 +51,6 @@
     "jsx-a11y/role-supports-aria-props": "warn",
     "@next/next/no-img-element": "off",
     "@typescript-eslint/no-explicit-any": "off",
-    "@typescript-eslint/ban-ts-comment": "off",
-    "padding-line-between-statements": [
-      "error",
-      { "blankLine": "always", "prev": "*", "next": "*" },
-      { "blankLine": "any", "prev": "import", "next": "import" }
-    ]
+    "@typescript-eslint/ban-ts-comment": "off"
   }
 }

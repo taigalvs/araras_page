@@ -1,70 +1,40 @@
-import Image from 'next/image'
 import React from 'react'
-
-import AboutImage from 'araras/public/assets/images/about-section-image.jpg'
-import { Button } from '@/components/atoms'
-import { SUPPORTERS_URL } from '@/constants'
+import { HrText } from '@/components/atoms'
 
 export function AboutSection() {
   return (
-    <section className="max-container flexColCenter lg:flexColStart  gap-8  py-20 lg:gap-16">
-      <div className="flexColCenter lg:flexBetween  gap-8  lg:gap-20 ">
-        <div className="flexColCenter lg:flexColStart flex-1 sm:text-center lg:text-left">
-          <div className="flexColCenter lg:flexStart mb-6 flex-col-reverse gap-4 lg:flex-row">
-            <hr className="w-[72px] border-b-2 border-secondary" />
-            <h3 className="font-bold uppercase tracking-wide text-secondary">
-              Saiba mais sobre nós
-            </h3>
-          </div>
-
-          <div className="flexColCenter lg:flexColStart gap-8 lg:ml-[calc(72px_+_1rem)]">
-            <h2 className="h2-bold text-secondary">
-              Oferecemos educação e apoio para crianças da nossa comunidade
-            </h2>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Suspendisse varius enim in eros elementum tristique.
-              <br />
-              <br />
-              Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut
-              commodo diam libero vitae erat. Aenean faucibus nibh et justo
-              cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus
-              tristique posuere.
-            </p>
-            <Button className="mt-4">Saiba mais</Button>
-          </div>
-        </div>
-        <div className="flexCenter lg:flexEnd  flex-1 ">
-          <Image
-            className="rounded-3xl"
-            placeholder="blur"
-            width={480}
-            alt="kids playing"
-            src={AboutImage}
-          />
-        </div>
-      </div>
-      <div className="flexColCenter lg:flexColStart w-full gap-8 ">
-        <div className="flexColCenter lg:flexStart w-full flex-nowrap gap-6">
-          <h3 className="min-w-max font-medium uppercase tracking-wide text-secondary">
-            NOSSOS APOIADORES
+    <section
+      id="sobre"
+      className="flexColCenter lg:flexColStart container gap-8 px-4 py-20 md:px-8 lg:gap-16 lg:pb-80">
+      <div className="flexColStart flex-1 ">
+        <HrText text="Sobre o instituto araras" />
+        <div className="flexColCenter lg:flexBetween items-start gap-2 lg:ml-[calc(72px_+_1rem)]">
+          <h3
+            data-aos="fade-right"
+            data-aos-easing="ease-in-out-sine"
+            data-aos-duration="500"
+            className="h3-bold w-full text-primary-700">
+            Oferecemos educação e apoio para crianças da nossa comunidade.
           </h3>
-          <hr className="w-full border-b-0 border-gray-200 " />
-        </div>
-        <div>
-          <ul className="flex flex-wrap items-center justify-center gap-x-10 gap-y-6 md:gap-x-16">
-            {SUPPORTERS_URL.map((url) => (
-              <li key={url}>
-                <Image
-                  width={140}
-                  height={28}
-                  alt="supporter logo"
-                  src={url}
-                  className="grayscale filter hover:grayscale-0"
-                />
-              </li>
-            ))}
-          </ul>
+          <p
+            data-aos="fade-left"
+            data-aos-easing="ease-in-out-sine"
+            data-aos-duration="500"
+            className="p-regular-16 w-full">
+            <span className="font-bold">
+              O Instituto Araras é uma organização não governamental que atua
+              inteiramente por meio de voluntários.
+            </span>{' '}
+            Nosso foco principal é impulsionar melhorias sociais na Favela do
+            Arará, promovendo o aprimoramento educacional, cultural e
+            comunitário.
+            <br />
+            <br />
+            Comprometidos em apoiar crianças e jovens locais, buscamos ofertar
+            oportunidades que fortaleçam suas perspectivas futuras e contribuam
+            para o desenvolvimento da favela em sua totalidade, através da
+            consolidação de ações comunitárias.
+          </p>
         </div>
       </div>
     </section>

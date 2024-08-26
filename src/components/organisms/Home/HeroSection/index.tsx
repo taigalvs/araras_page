@@ -1,45 +1,89 @@
-import Image from 'next/image'
-import React from 'react'
+'use client'
 
-import HeroImage from 'araras/public/assets/images/hero-image.png'
-import { Button } from '@/components/atoms'
-import { TbPlayerPlayFilled } from 'react-icons/tb'
+import React from 'react'
+import Image1 from '@public/assets/images/grid-1.png'
+import Image2 from '@public/assets/images/grid-2.png'
+import Image3 from '@public/assets/images/grid-3.png'
+import Image4 from '@public/assets/images/grid-4.png'
+import Image5 from '@public/assets/images/grid-5.png'
+import Image6 from '@public/assets/images/grid-6.png'
+import Image7 from '@public/assets/images/grid-7.png'
+import Image8 from '@public/assets/images/grid-8.png'
+import Image9 from '@public/assets/images/grid-9.png'
+
+import { Button, ImagesParallax, TypeWriter } from '@/components/atoms'
+import { DONATE_URL } from '@/constants'
+import { FaArrowRight } from 'react-icons/fa6'
 
 export function HeroSection() {
   return (
-    <section className="bg-black pt-14">
-      <div className="max-container lg:flex lg:gap-20">
-        <div className="flexCenter lg:flexStart flex-1 flex-col gap-8 pb-14 lg:items-start  lg:gap-16">
-          <h1 className="h1-bold text-white">
-            Transformar através
-            <br /> da
-            <span className="text-primary">
-              {' '}
-              educação e<br /> acolhimento
-            </span>
-          </h1>
-
-          <div className="flexCenter lg:flexStart  gap-6">
-            <Button>O que fazemos</Button>
-            <Button className="gap-2 text-white" variant="ghost">
-              <span className="rounded-full bg-white p-2">
-                <TbPlayerPlayFilled color="#1E1E1E" />
+    <section
+      id="#"
+      className="relative flex h-[calc(100vh-120px)] max-h-[735px] items-center">
+      <div className="absolute inset-0 top-[-120px] bg-hero bg-cover bg-center bg-no-repeat" />
+      <div className="absolute inset-0 top-[-109px] bg-black bg-opacity-30 backdrop-blur-[2px]" />
+      <div className="absolute bottom-0 left-[-20%] right-0 top-[-10%] h-[200px] w-[200px] rounded-full bg-[radial-gradient(circle_farthest-side,rgba(26,165,221,.30),rgba(255,255,255,0))] md:h-[500px] md:w-[500px]" />
+      <div className="absolute bottom-0 right-[-20%] top-[70%] h-[200px] w-[200px] rounded-full bg-[radial-gradient(circle_farthest-side,rgba(26,165,221,.30),rgba(255,255,255,0))]  md:top-[-10%] md:h-[500px] md:w-[500px]" />
+      <div className="container gap-8 lg:flex">
+        <div className="flexColStart flex-1 gap-10">
+          <div>
+            <h1 className="h1-bold animate-moveUp text-white">
+              Transformar através
+              <br />
+              <span className="text-primary">
+                <TypeWriter
+                  text={[
+                    'da educação',
+                    'do acolhimento',
+                    'da inclusão',
+                    'da cultura e arte',
+                    'da sustentabilidade',
+                    'da saúde comunitária',
+                  ]}
+                />
               </span>
-              Veja o video
-            </Button>
+            </h1>
+            <p className="p-regular-16 mt-2 animate-moveUp text-white">
+              Nossa missão é fortalecer a comunidade da Favela do Arará através
+              de iniciativas educativas e de desenvolvimento social. Voluntários
+              apaixonados trabalham para oferecer uma base sólida que inspire e
+              eleve nossos jovens.
+            </p>
           </div>
-          <div className="flexColCenter lg:flexStart  w-full  gap-5 lg:mt-44">
-            <p className="text-white">230 crianças sob nossos cuidados</p>
-            <hr className="w-1/6 border-white" />
-            <p className="text-white">500 doações coletadas</p>
+
+          <div className="flexColStart w-auto animate-moveUp gap-2">
+            <p className="text-sm text-white">
+              em média <span className="!font-semibold">90 crianças</span> sob
+              nossos cuidados
+            </p>
+            <hr className="w-full border-white" />
+            <p className="text-sm text-white">
+              mais de <span className="!font-semibold">30 eventos</span>{' '}
+              realizados
+            </p>
           </div>
+          <Button
+            onClick={() => window.open(DONATE_URL, '_blank')}
+            className="font-normal"
+            variant="expandIcon"
+            Icon={FaArrowRight}
+            iconPlacement="right">
+            Seja um doador!
+          </Button>
         </div>
-        <div className="flexCenter lg:flexEnd flex-1  lg:items-end ">
-          <Image
-            placeholder="blur"
-            width={480}
-            alt="kids playing"
-            src={HeroImage}
+        <div className="hidden h-[calc(100vh-120px)] max-h-[735px]  overflow-hidden  rounded-t-2xl lg:block">
+          <ImagesParallax
+            images={[
+              Image5.src,
+              Image1.src,
+              Image4.src,
+              Image3.src,
+              Image2.src,
+              Image6.src,
+              Image7.src,
+              Image8.src,
+              Image9.src,
+            ]}
           />
         </div>
       </div>

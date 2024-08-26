@@ -1,60 +1,50 @@
-'use client'
-
-import { FOOTER_LINKS } from '@/constants'
 import Image from 'next/image'
 import React from 'react'
-import ArarasLogo from 'araras/public/assets/logo_outlined.svg'
-import { Button } from '@/components/atoms'
+import ArarasLogo from '@public/assets/logo.png'
 
 export function Footer() {
   return (
-    <footer className="md:px-18 mx-auto w-full  bg-black px-12 py-6 text-white md:px-20">
-      <div className="flex flex-col justify-between gap-12 md:flex-row">
-        <div className="flex justify-center">
-          <Image
-            alt="araras-logo-footer"
-            width={115}
-            height={117}
-            src={ArarasLogo}
-          />
-        </div>
+    <footer
+      id="contato"
+      className="w-full bg-primary-700 px-4 py-10 text-white md:px-8 ">
+      <div className="mx-auto flex max-w-screen-xl flex-col justify-center gap-8  lg:flex-row  lg:justify-between lg:gap-12">
+        <Image
+          alt="araras-logo-footer"
+          width={115}
+          height={117}
+          src={ArarasLogo}
+        />
 
-        <div className="mt-10 items-center justify-between space-y-6 sm:flex md:mt-0 md:gap-12 md:space-y-0">
-          {FOOTER_LINKS.map((item, idx) => (
-            <ul className="min-w-fit space-y-4" key={idx}>
-              <h4 className="font-bold text-white">{item.label}</h4>
-              {item.items.map((el, idx) => (
-                <li key={idx}>
-                  <a
-                    href={el.href}
-                    className="text-sm hover:text-primary-500 hover:underline">
-                    {el.name}
-                  </a>
-                </li>
-              ))}
-            </ul>
-          ))}
-        </div>
-
-        <form className="max-w-lg" onSubmit={(e) => e.preventDefault()}>
-          <label className="block pb-2 pt-4 text-4xl font-bold leading-snug">
-            Se inscreva para receber as últimas atualizações
-          </label>
-          <div className="flex max-w-sm items-center rounded-md border ">
-            <input
-              type="email"
-              placeholder="Seu e-mail"
-              className="w-full bg-transparent p-4 text-gray-100 outline-none"
-            />
-            <Button
-              className="bg-white text-black hover:bg-slate-200"
-              size="lg">
-              Inscreva-se
-            </Button>
+        <div className="items-start justify-between space-y-6 sm:flex md:mt-0 md:gap-12 md:space-y-0">
+          <div className="w-full">
+            <h3 className="font-semibold">Localização:</h3>
+            <p>
+              Av. Carlos Mattoso Corrêa, 405 - Benfica, Rio de Janeiro - RJ,
+              20930-491 Favela do Arará, Benfica
+            </p>
           </div>
-        </form>
+          <div className="w-full">
+            <h3 className="font-semibold">Email:</h3>
+            <p>proj.araras@gmail.com</p>
+          </div>
+          <div className="w-full">
+            <h3 className="font-semibold">Contatos:</h3>
+            <p>
+              <a href="tel:+5521997720213" className="hover:underline">
+                +55 21 99772-0213
+              </a>{' '}
+              - Sabrina Mendes (Presidenta)
+            </p>
+            <p>
+              <a href="tel:+5521981676299" className="hover:underline">
+                +55 21 98167-6299
+              </a>{' '}
+              - Lohayne Carvalho (Diretora)
+            </p>
+          </div>
+        </div>
       </div>
-      <hr className="-mx-20 my-8 h-0.5 border-t-0 bg-neutral-100 opacity-100 dark:opacity-50" />
+      <hr className="-mx-20 my-8 h-0.5 border bg-neutral-50  opacity-50" />
       <div className=" items-center justify-center  sm:flex">
         &copy; 2024 Instituto Araras. Todos os direitos reservados.
       </div>
