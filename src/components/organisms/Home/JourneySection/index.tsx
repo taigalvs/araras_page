@@ -14,8 +14,8 @@ export function JourneySection() {
               data-aos-easing="ease-in-out-sine"
               data-aos-duration="500"
               className="h3-bold text-white">
-              Nos nossos 4 anos de existência, transformando a realidade das
-              crianças e jovens do Arará
+              4 anos de existência, transformando a realidade das crianças e
+              jovens do Arará
             </h3>
             <p
               data-aos="fade-in"
@@ -29,7 +29,7 @@ export function JourneySection() {
               principalmente dos crias do Arará.
               <br />
               <br />
-              Aos poucos o Instituto foi tomando forma e se reformulando a cada
+              Aos poucos a Associação foi tomando forma e se reformulando a cada
               ano, conforme os desafios que foram surgindo como saída de um
               grande número de voluntários, falta de verba fixa, manutenção do
               espaço, entre outros. Com muita garra, dedicação e perseverança,

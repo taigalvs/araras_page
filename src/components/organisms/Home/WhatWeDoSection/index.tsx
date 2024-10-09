@@ -28,8 +28,8 @@ export function WhatWeDoSection() {
                   data-aos-duration="500"
                   data-aos-delay="400"
                   data-aos-offset="0">
-                  Exploramos caminhos para enriquecer a vida dos jovens do Arará
-                  com educação, saúde e lazer, promovendo um futuro mais
+                  Exploramos caminhos para enriquecer a vida das crianças do
+                  Arará com educação, saúde e lazer, promovendo um futuro mais
                   brilhante.
                 </p>
               </div>

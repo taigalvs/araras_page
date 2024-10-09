@@ -75,6 +75,9 @@ export function ContributionSection() {
               className="mt-auto font-normal"
               variant="expandIcon"
               Icon={FaArrowRight}
+              onClick={() =>
+                window.open('https://wa.me/5521997720213', '_blank')
+              }
               iconPlacement="right">
               FAÇA PARTE
             </Button>
@@ -100,7 +103,7 @@ export function ContributionSection() {
             data-aos-delay="300"
             className="p-regular-16">
             Assim como o lar em que vivemos, o espaço aonde funcionam as aulas e
-            encontros do Instituto Araras precisa de manutenção física para
+            encontros da Associação Araras precisa de manutenção física para
             caber todo nosso trabalho e afeto. Neste sentido, sua contribuição é
             fundamental para que possamos fazer reparos estruturais, comprarmos
             produtos de limpeza, afim de conservar nossos 3 andares limpos para
@@ -108,7 +111,7 @@ export function ContributionSection() {
             crianças e os jovens da Favela do Arará.
             <br />
             <br />
-            Outra destinação da sua contribuição para o nosso Instituto, é a
+            Outra destinação da sua contribuição para a nossa Associação, é a
             compra de materiais didáticos para as "araras" (jovens) e
             "ararinhas" (crianças). Como somos uma organização sem fins
             lucrativos (ONG) e totalmente gratuita, a compra e utilização de

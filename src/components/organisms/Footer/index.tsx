@@ -46,7 +46,7 @@ export function Footer() {
       </div>
       <hr className="-mx-20 my-8 h-0.5 border bg-neutral-50  opacity-50" />
       <div className=" items-center justify-center  sm:flex">
-        &copy; 2024 Instituto Araras. Todos os direitos reservados.
+        &copy; 2024 Associação Araras. Todos os direitos reservados.
       </div>
     </footer>
   )

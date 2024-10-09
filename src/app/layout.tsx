@@ -5,15 +5,15 @@ import { Navbar } from '@/components/organisms'
 import AOSProvider from '../lib/aos'
 
 export const metadata: Metadata = {
-  title: 'Instituto Araras - ONG na Favela do Arará',
+  title: 'Associação Araras - ONG na Favela do Arará',
   description:
-    'O Instituto Araras é uma ONG que atua com voluntários para promover melhorias sociais, educacionais e culturais na Favela do Arará, impulsionando o desenvolvimento comunitário.',
+    'A Associação Araras é uma ONG que atua com voluntários para promover melhorias sociais, educacionais e culturais na Favela do Arará, impulsionando o desenvolvimento comunitário.',
   keywords:
-    'Instituto Araras, ONG, Favela do Arará, voluntariado, desenvolvimento comunitário, educação, cultura',
+    'Associação Araras, ONG, Favela do Arará, voluntariado, desenvolvimento comunitário, educação, cultura',
   openGraph: {
-    title: 'Instituto Araras - Transformando Vidas na Favela do Arará',
+    title: 'Associação Araras - Transformando Vidas na Favela do Arará',
     description:
-      'Conheça o Instituto Araras, uma ONG dedicada a promover melhorias sociais, educacionais e culturais na Favela do Arará através do trabalho voluntário.',
+      'Conheça a Associação Araras, uma ONG dedicada a promover melhorias sociais, educacionais e culturais na Favela do Arará através do trabalho voluntário.',
     type: 'website',
     locale: 'pt_BR',
     url: 'https://araras.ong.br',

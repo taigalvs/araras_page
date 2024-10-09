@@ -14,7 +14,10 @@
 
 @layer utilities {
   html {
-    @apply font-sans text-primary-700;
+    @apply overscroll-none font-sans text-primary-700;
+  }
+  body {
+    @apply overscroll-none;
   }
 
   .flexCenter {

@@ -19,13 +19,11 @@ export function HeroSection() {
   return (
     <section
       id="#"
-      className="relative flex h-[calc(100vh-120px)] max-h-[735px] items-center">
-      <div className="absolute inset-0 top-[-120px] bg-hero bg-cover bg-center bg-no-repeat" />
-      <div className="absolute inset-0 top-[-109px] bg-black bg-opacity-30 backdrop-blur-[2px]" />
-      <div className="absolute bottom-0 left-[-20%] right-0 top-[-10%] h-[200px] w-[200px] rounded-full bg-[radial-gradient(circle_farthest-side,rgba(26,165,221,.30),rgba(255,255,255,0))] md:h-[500px] md:w-[500px]" />
-      <div className="absolute bottom-0 right-[-20%] top-[70%] h-[200px] w-[200px] rounded-full bg-[radial-gradient(circle_farthest-side,rgba(26,165,221,.30),rgba(255,255,255,0))]  md:top-[-10%] md:h-[500px] md:w-[500px]" />
+      className="relative flex h-[calc(100vh-120px)] max-h-[735px] min-h-fit items-center ">
+      <div className="absolute inset-0 top-[-120px] overflow-hidden bg-hero bg-cover bg-center bg-no-repeat" />
+      <div className="absolute inset-0 top-[-109px] min-h-fit bg-black bg-opacity-30 backdrop-blur-[2px]" />
       <div className="container gap-8 lg:flex">
-        <div className="flexColStart flex-1 gap-10">
+        <div className="flexColStart flex-1 gap-10 pb-8">
           <div>
             <h1 className="h1-bold animate-moveUp text-white">
               Transformar através
@@ -53,7 +51,7 @@ export function HeroSection() {
 
           <div className="flexColStart w-auto animate-moveUp gap-2">
             <p className="text-sm text-white">
-              em média <span className="!font-semibold">90 crianças</span> sob
+              mais de <span className="!font-semibold">100 crianças</span> sob
               nossos cuidados
             </p>
             <hr className="w-full border-white" />
@@ -71,7 +69,7 @@ export function HeroSection() {
             Seja um doador!
           </Button>
         </div>
-        <div className="hidden h-[calc(100vh-120px)] max-h-[735px]  overflow-hidden  rounded-t-2xl lg:block">
+        <div className="hidden h-full max-h-[735px]   overflow-hidden  rounded-t-2xl lg:block">
           <ImagesParallax
             images={[
               Image5.src,
