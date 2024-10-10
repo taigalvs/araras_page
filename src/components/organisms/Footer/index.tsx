@@ -25,7 +25,9 @@ export function Footer() {
           </div>
           <div className="w-full">
             <h3 className="font-semibold">Email:</h3>
-            <p>proj.araras@gmail.com</p>
+            <a href="mailto:proj.araras@gmail.com" className="hover:underline">
+              proj.araras@gmail.com
+            </a>
           </div>
           <div className="w-full">
             <h3 className="font-semibold">Contatos:</h3>

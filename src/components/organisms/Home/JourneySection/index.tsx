@@ -30,19 +30,19 @@ export function JourneySection() {
               <br />
               <br />
               Aos poucos a Associação foi tomando forma e se reformulando a cada
-              ano, conforme os desafios que foram surgindo como saída de um
+              ano, conforme os desafios que foram surgindo como a saída de um
               grande número de voluntários, falta de verba fixa, manutenção do
               espaço, entre outros. Com muita garra, dedicação e perseverança,
-              enfrentamos todos esses e, hoje, acolhemos, através da cultura e
-              educação, aproximadamente 90 crianças e jovens da Favela do Arará.
+              enfrentamos todos esses desafios e, hoje, acolhemos, através da
+              cultura e educação, aproximadamente mais de 100 crianças e jovens
+              da Favela do Arará.
               <br />
               <br />
-              Nessa trajetória, portanto, vivenciamos juntos muitas
-              aprendizagens, sorrisos e, principalmente, o olhar brilhante das
-              “primeiras vezes”: o primeiro bolo de aniversário, a primeira
-              visita ao museu, o primeiro campeonato de futebol… E assim,
-              somamos forças para que esse trabalho não pare. Contamos com sua
-              ajuda!
+              Nessa trajetória, vivenciamos juntos diversas aprendizagens,
+              sorrisos e, principalmente, o olhar brilhante das “primeiras
+              vezes”: o primeiro bolo de aniversário, a primeira visita ao
+              museu, o primeiro campeonato de futebol… E assim, somamos forças
+              para que esse trabalho não pare. Contamos com sua ajuda!
             </p>
           </div>
         </div>

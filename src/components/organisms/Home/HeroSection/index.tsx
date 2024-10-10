@@ -42,17 +42,17 @@ export function HeroSection() {
               </span>
             </h1>
             <p className="p-regular-16 mt-2 animate-moveUp text-white">
-              Nossa missão é fortalecer a comunidade da Favela do Arará através
-              de iniciativas educativas e de desenvolvimento social. Voluntários
-              apaixonados trabalham para oferecer uma base sólida que inspire e
-              eleve nossos jovens.
+              Nossa missão é fortalecer a Favela do Arará através de iniciativas
+              educativas e de desenvolvimento social. Voluntários apaixonados
+              trabalham oferecendo uma base sólida que inspire e eleve nossos
+              jovens.
             </p>
           </div>
 
-          <div className="flexColStart w-auto animate-moveUp gap-2">
+          <div className="flexColCenter md:flexColStart w-auto animate-moveUp gap-2 text-center md:text-left ">
             <p className="text-sm text-white">
-              mais de <span className="!font-semibold">100 crianças</span> sob
-              nossos cuidados
+              mais de <span className="!font-semibold">100 crianças</span> e
+              jovens sob nossos cuidados
             </p>
             <hr className="w-full border-white" />
             <p className="text-sm text-white">

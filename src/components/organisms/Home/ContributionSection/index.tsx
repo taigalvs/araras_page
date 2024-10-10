@@ -105,10 +105,9 @@ export function ContributionSection() {
             Assim como o lar em que vivemos, o espaço aonde funcionam as aulas e
             encontros da Associação Araras precisa de manutenção física para
             caber todo nosso trabalho e afeto. Neste sentido, sua contribuição é
-            fundamental para que possamos fazer reparos estruturais, comprarmos
-            produtos de limpeza, afim de conservar nossos 3 andares limpos para
-            receber as pessoas que têm centralidade no nosso trabalho: as
-            crianças e os jovens da Favela do Arará.
+            fundamental para que possamos fazer reparos estruturais, de produtos
+            de limpeza, insumos para realização de atividades externas, entre
+            outros.
             <br />
             <br />
             Outra destinação da sua contribuição para a nossa Associação, é a

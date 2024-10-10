@@ -25,7 +25,7 @@ export const FEATURES = [
     title: 'Benefícios para a saúde',
     icon: RiMentalHealthFill,
     description:
-      'Nosso foco é na saúde integral das crianças, proporcionando acesso a serviços de saúde preventiva e programas de nutrição.',
+      'Nosso foco é na saúde integral das crianças, orientando sobre aos serviços de saúde preventiva e programas de nutrição.',
   },
   {
     title: 'Educação',
@@ -37,6 +37,6 @@ export const FEATURES = [
     title: 'Eventos comemorativos',
     icon: GiPartyFlags,
     description:
-      'Celebramos momentos especiais como o Dia das Crianças e o Natal com eventos que trazem alegria e fortalecem o senso de comunidade.',
+      'Celebramos momentos especiais como a Festa da Páscoa, Festa Agostina, dia das crianças e o Natal com eventos que trazem alegria e fortalecem o senso de comunidade.',
   },
 ]
