@@ -1,10 +1,11 @@
-import { FaHandsHoldingChild } from 'react-icons/fa6'
 import { FaBookOpen } from 'react-icons/fa'
-import { RiMentalHealthFill } from 'react-icons/ri'
+import { FaHandsHoldingChild } from 'react-icons/fa6'
 import { GiPartyFlags } from 'react-icons/gi'
+import { RiMentalHealthFill } from 'react-icons/ri'
 
 // URLs
-export const DONATE_URL = 'https://www.paypal.com/ncp/payment/E3JLFLDW6HPRJ'
+export const DONATE_URL =
+  'https://www.paypal.com/donate/?hosted_button_id=9MEGCK5QM4S3S'
 
 // NAVIGATION
 export const NAV_LINKS = [
