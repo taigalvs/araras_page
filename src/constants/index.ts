@@ -4,8 +4,11 @@ import { GiPartyFlags } from 'react-icons/gi'
 import { RiMentalHealthFill } from 'react-icons/ri'
 
 // URLs
-export const DONATE_URL =
-  'https://www.paypal.com/donate/?hosted_button_id=9MEGCK5QM4S3S'
+export const DONATE_UNICO_URL =
+  'https://link.mercadopago.com.br/doeararas'
+
+export const DONATE_MENSAL_URL =
+  'https://www.mercadopago.com.br/subscriptions/checkout?preapproval_plan_id=2c9380849563a16501957157fefd0789'
 
 // NAVIGATION
 export const NAV_LINKS = [

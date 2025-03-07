@@ -2,7 +2,7 @@
 
 import { Home as CHome } from '@/components/organisms'
 import { Button } from '../components/atoms'
-import { DONATE_URL } from '@/constants'
+import { DONATE_UNICO_URL } from '@/constants'
 import { FaArrowRight } from 'react-icons/fa6'
 
 export default function HomePage() {
@@ -17,7 +17,7 @@ export default function HomePage() {
 
       <div className="flex w-full justify-center bg-primary-500 py-6">
         <Button
-          onClick={() => window.open(DONATE_URL, '_blank')}
+          onClick={() => window.open(DONATE_UNICO_URL, '_blank')}
           className="font-normal"
           variant="expandIcon"
           Icon={FaArrowRight}

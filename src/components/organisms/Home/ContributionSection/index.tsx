@@ -4,7 +4,7 @@ import React from 'react'
 
 import { Button, HrText } from '@/components/atoms'
 import { FaArrowRight } from 'react-icons/fa6'
-import { DONATE_URL } from '@/constants'
+import { DONATE_UNICO_URL, DONATE_MENSAL_URL } from '@/constants'
 
 export function ContributionSection() {
   return (
@@ -27,12 +27,12 @@ export function ContributionSection() {
               transformação social!
             </p>
             <Button
-              onClick={() => window.open(DONATE_URL, '_blank')}
+              onClick={() => window.open(DONATE_MENSAL_URL, '_blank')}
               className="mt-auto font-normal"
               variant="expandIcon"
               Icon={FaArrowRight}
               iconPlacement="right">
-              DOAR COM PAYPAL
+              DOE MENSALMENTE
             </Button>
           </div>
           <hr className="block w-full border-b-0 border-primary-700 lg:hidden " />
@@ -49,12 +49,12 @@ export function ContributionSection() {
               impulsionar o futuro das crianças e jovens da Favela do Arará.
             </p>
             <Button
-              onClick={() => window.open(DONATE_URL, '_blank')}
+              onClick={() => window.open(DONATE_UNICO_URL, '_blank')}
               className="mt-auto font-normal"
               variant="expandIcon"
               Icon={FaArrowRight}
               iconPlacement="right">
-              DOAR COM PAYPAL
+              DOAR
             </Button>
           </div>
           <hr className="block w-full border-b-0 border-primary-700 lg:hidden " />

@@ -1,6 +1,6 @@
 'use client'
 
-import { DONATE_URL, NAV_LINKS } from '@/constants'
+import { DONATE_UNICO_URL, NAV_LINKS } from '@/constants'
 import Image from 'next/image'
 import React, { useState } from 'react'
 import ArarasLogo from '@public/assets/logo.png'
@@ -60,7 +60,7 @@ export function Navbar() {
                     Icon={FaArrowRight}
                     iconPlacement="right"
                     size="lg"
-                    onClick={() => window.open(DONATE_URL, '_blank')}>
+                    onClick={() => window.open(DONATE_UNICO_URL, '_blank')}>
                     Doar!
                   </Button>
                 </div>

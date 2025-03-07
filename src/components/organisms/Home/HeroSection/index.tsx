@@ -12,7 +12,7 @@ import Image8 from '@public/assets/images/grid-8.png'
 import Image9 from '@public/assets/images/grid-9.png'
 
 import { Button, ImagesParallax, TypeWriter } from '@/components/atoms'
-import { DONATE_URL } from '@/constants'
+import { DONATE_UNICO_URL } from '@/constants'
 import { FaArrowRight } from 'react-icons/fa6'
 
 export function HeroSection() {
@@ -61,7 +61,7 @@ export function HeroSection() {
             </p>
           </div>
           <Button
-            onClick={() => window.open(DONATE_URL, '_blank')}
+            onClick={() => window.open(DONATE_UNICO_URL, '_blank')}
             className="font-normal"
             variant="expandIcon"
             Icon={FaArrowRight}
