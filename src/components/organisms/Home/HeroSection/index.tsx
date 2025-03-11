@@ -54,7 +54,7 @@ export function HeroSection() {
               mais de <span className="!font-semibold">100 crianças</span> e
               jovens sob nossos cuidados
             </p>
-            <hr className="w-full border-white" />
+            <hr className="w-full max-w-[150px] border-white md:max-w-none" />
             <p className="text-sm text-white">
               mais de <span className="!font-semibold">30 eventos</span>{' '}
               realizados
@@ -62,7 +62,7 @@ export function HeroSection() {
           </div>
           <Button
             onClick={() => window.open(DONATE_UNICO_URL, '_blank')}
-            className="font-normal"
+            className="w-full font-normal md:w-auto"
             variant="expandIcon"
             Icon={FaArrowRight}
             iconPlacement="right">

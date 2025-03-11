@@ -18,7 +18,7 @@ export function ContributionSection() {
             data-aos-duration="500"
             data-aos-delay="200"
             data-aos-offset="0"
-            className="flex h-[264px] w-full flex-col  gap-4 lg:items-start">
+            className="flex h-[264px] w-full flex-col  gap-4 ">
             <p className="font-medium">Doação mensal</p>
             <p className="p-regular-16">
               Ser um doador mensal possibilita fazer a diferença de diversas
@@ -42,7 +42,7 @@ export function ContributionSection() {
             data-aos-duration="500"
             data-aos-delay="400"
             data-aos-offset="0"
-            className="flex h-[264px] w-full flex-col   gap-4 ">
+            className="flex h-[264px] w-full flex-col  gap-4 ">
             <p className="font-medium">Doação única</p>
             <p className="p-regular-16">
               Um único gesto pode transformar uma vida! Doe e nos ajude a

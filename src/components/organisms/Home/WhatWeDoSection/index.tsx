@@ -8,7 +8,7 @@ import { HrText } from '@/components/atoms'
 export function WhatWeDoSection() {
   return (
     <section id="oque-fazemos" className="bg-primary-500 px-4  py-20  md:px-8">
-      <div className="flexColStart container  gap-8   lg:gap-16">
+      <div className="flexColStart gap-8  lg:container   lg:gap-16">
         <div className="flexColStart lg:flexBetween  gap-8 lg:gap-24 ">
           <div className="flexColStart flex-1 text-white">
             <HrText variant="white" text="O que fazemos" />
